@@ -30,5 +30,10 @@ class ThreeUKUsage
   def to_h()
     {expires: @expires, remaining: @remaining}
   end
+  
+  def to_s()
+    "Three.co.uk Data Allowance:\n\n\tremaining: %s MB\n\texpires: %s" % \
+        [@remaining, @expires]
+  end
 
 end
